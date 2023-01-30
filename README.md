@@ -15,8 +15,21 @@ The Screenshot Index is a value stored in the Windows Registry that is used to k
 1. Enter the new value for the Screenshot Index.
 1. The script will update the Screenshot Index value in the Windows Registry.
 
-## Note
-This script is designed to run on Windows operating systems and requires administrative privileges to modify the Windows Registry.
+> **Note**
+> This script is designed to run on Windows operating systems and requires administrative privileges to modify the Windows Registry.
+
+## FlowChart
+```mermaid
+graph TB
+A(Get current value of ScreenshotIndex) --> B[Input new value for ScreenshotIndex]
+B --> |OK| C{Is new value a number?}
+C --> |Yes| D[Is new value between 0 and 9999999?]
+D --> |Yes| E[Update ScreenshotIndex to new value]
+D --> |No| F(Show Invalid input ScreenshotIndex value must be a number.)
+C --> |No| F
+E --> G(Show ScreenshotIndex value has been updated.)
+B --> |Cancel| H(No update made.)
+```
 
 ## Script
 ```vb
