@@ -10,7 +10,7 @@ A simple VBScript to update the Screenshot Index value in the Windows Registry.
 The Screenshot Index is a value stored in the Windows Registry that is used to keep track of the next number to use when naming screenshots taken using the `Print Screen`. This value is stored in the registry key `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ScreenshotIndex`.
 
 ## Usage
-1. Download the `UpdateScreenshotIndex.vbs` file.
+1. [Download](https://github.com/kame404/Screenshot-Index-Updater/archive/refs/heads/main.zip) the `UpdateScreenshotIndex.vbs` file.
 1. Double-click the file to run it.
 1. Enter the new value for the Screenshot Index.
 1. The script will update the Screenshot Index value in the Windows Registry.
